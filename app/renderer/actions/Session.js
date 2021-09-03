@@ -800,7 +800,7 @@ function addCustomCaps (caps) {
   const {browserName = '', platformName = ''} = caps;
   const safariCustomCaps = {
     // Add the includeSafariInWebviews for future HTML detection
-    includeSafariInWebviews: true,
+    'appium:includeSafariInWebviews': true,
   };
   const chromeCustomCaps = {};
   // Make sure the screenshot is taken of the whole screen when the ChromeDriver is used
